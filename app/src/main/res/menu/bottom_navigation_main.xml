@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_job_feed"
+        android:enabled="true"
+        android:icon="@drawable/ic_whatshot_black_24dp"
+        android:title="@string/job_feed"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_job_pin"
+        android:enabled="true"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="@string/job_profile"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_job_help"
+        android:enabled="true"
+        android:icon="@drawable/ic_help_black_24dp"
+        android:title="@string/job_help"
+        app:showAsAction="always" />
+    <!--<item
+        android:id="@+id/action_setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/job_setting"
+        app:showAsAction="always" />-->
+</menu>

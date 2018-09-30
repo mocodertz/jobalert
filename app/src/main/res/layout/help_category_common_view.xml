@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="@dimen/cardMarginVertical"
+        android:background="@android:color/white"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/app_letter_desc_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@android:color/holo_blue_light"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/title_desc_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/app_letter_desc_heading"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/app_letter_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_desc_divider"
+                android:text="@string/application_letter_description" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView><!-- Description -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/list_item_banner_ad" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="@dimen/cardMarginVertical"
+        android:background="@android:color/white"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/advice_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tips for Writing a Job Application Letter"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/advice_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/advice_heading"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/first_tip_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/advice_divider"
+                android:text="Don't Regurgitate your Resume"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/first_tip_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_tip_title"
+                android:text="Instead of repeating yourself, use cover latter to describe additional details that you were not able to squeeze on to the single page of your resume." />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/second_tip_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_tip_desc"
+                android:layout_marginTop="5dp"
+                android:text="Think Not what Company can do for you"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/second_tip_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_tip_title"
+                android:text="Instead of repeating yourself, use cover latter to describe additional details that you were not able to squeeze on to the single page of your resume." />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/third_tip_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_tip_desc"
+                android:layout_marginTop="5dp"
+                android:text="Clearly Show what your are Capable of."
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/third_tip_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/third_tip_title"
+                android:text="Instead of repeating yourself, use cover latter to describe additional details that you were not able to squeeze on to the single page of your resume." />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/fourth_tip_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/third_tip_desc"
+                android:layout_marginTop="5dp"
+                android:text="Keep it Short and Sweet"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/fourth_tip_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fourth_tip_title"
+                android:text="Instead of repeating yourself, use cover latter to describe additional details that you were not able to squeeze on to the single page of your resume." />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/fifth_tip_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fourth_tip_desc"
+                android:layout_marginTop="5dp"
+                android:text="Don't Apologize for Skills you Don't have"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/fifth_tip_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fifth_tip_title"
+                android:text="Instead of repeating yourself, use cover latter to describe additional details that you were not able to squeeze on to the single page of your resume." />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView><!-- Advice -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="@dimen/cardMarginVertical"
+        android:background="@android:color/white"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/app_letter_sample_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="Sample Application Letter List"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/sample_desc_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/app_letter_sample_heading"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sample_application_letter_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_desc_divider"
+                tools:listitem="@layout/sample_document_item_view" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView><!-- Sample Document -->
+</LinearLayout>

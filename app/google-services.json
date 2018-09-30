@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "996204796772",
+    "firebase_url": "https://job-alert-d4f2d.firebaseio.com",
+    "project_id": "job-alert-d4f2d",
+    "storage_bucket": "job-alert-d4f2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996204796772:android:7ac904c90e8baa4e",
+        "android_client_info": {
+          "package_name": "com.jengasoft.jobalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996204796772-dju4nsvd1p1kb0ssc3u7f59noekr14oo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jengasoft.jobalert",
+            "certificate_hash": "37a57780e22cc0070f7d97a7d292fd99e1cfd2a1"
+          }
+        },
+        {
+          "client_id": "996204796772-7ssvmlokkdvb3re3mm17g00p555moir4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIMlvnM7U_X8keX0SG0M-IamVSfBKZpl8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996204796772-7ssvmlokkdvb3re3mm17g00p555moir4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

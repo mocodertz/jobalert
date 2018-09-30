@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/section_img"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:alpha="1"
+            android:background="@drawable/logo"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/section_img"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/description_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:alpha="0.7"
+                android:text="Add a long description here about your app's important feature. Continuous review of setup of operating system to ensure efficiency in production and accuracy of various analytical reports for management use."
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

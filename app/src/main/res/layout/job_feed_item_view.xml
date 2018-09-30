@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <RelativeLayout
+            android:id="@+id/company_details_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_logo_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="8dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/company_logo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/white"
+                    android:contentDescription="@string/logo_image"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:roundWithOverlayColor="@android:color/white" />
+            </android.support.v7.widget.CardView><!-- Company Logo -->
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/company_logo_container"
+                android:layout_toRightOf="@+id/company_logo_container"
+                android:text="@string/company_name"
+                android:textStyle="bold" /><!-- Company Name -->
+            <TextView
+                android:id="@+id/company_slogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company_name"
+                android:layout_toEndOf="@+id/company_logo_container"
+                android:layout_toRightOf="@+id/company_logo_container"
+                android:text="@string/company_slogan" /><!-- Company Slogan -->
+            <ImageView
+                android:id="@+id/save_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_save_black_24dp"
+                android:tint="@android:color/darker_gray" />
+        </RelativeLayout><!-- Hold Company Logo, name and Slogan -->
+        <RelativeLayout
+            android:id="@+id/job_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_details_container">
+
+            <TextView
+                android:id="@+id/job_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textStyle="bold"
+                android:text="Full Stack Software Engineer"
+                android:textColor="@android:color/holo_blue_dark" />
+        </RelativeLayout><!-- Job name -->
+        <RelativeLayout
+            android:id="@+id/job_category_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_name_container">
+
+            <TextView
+                android:id="@+id/filter_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/filter_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/filter_first"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/filter_first"
+                android:padding="10dp"
+                android:textColor="@android:color/white" />
+        </RelativeLayout><!-- Job Category Tag -->
+        <RelativeLayout
+            android:id="@+id/job_salary_scale_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_category_container">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/job_salary_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_payment_black_24dp"
+                android:tint="#827f93"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/job_salary_scale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_toEndOf="@+id/job_salary_icon"
+                android:text="@string/salary_scale"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/job_type_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <!--<android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/job_type_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_label_black_24dp"
+                    android:tint="#827f93" />-->
+
+                <TextView
+                    android:id="@+id/job_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Full Time"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout><!-- Job Type Container -->
+            <RelativeLayout
+                android:id="@+id/job_location_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <!--<android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/job_location_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_location_city_black_24dp"
+                    android:tint="#827f93" />-->
+
+                <TextView
+                    android:id="@+id/job_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Ilala, Dar es salaam"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout><!-- Job Location Container -->
+        </RelativeLayout><!-- Salary Scale -->
+        <RelativeLayout
+            android:id="@+id/job_description_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_salary_scale_container"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/job_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum" />
+        </RelativeLayout><!-- Job Description -->
+        <View
+            android:id="@+id/bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/job_description_container"
+            android:background="#ebebeb" /><!-- Bottom Divider -->
+        <RelativeLayout
+            android:id="@+id/job_crucial_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_divider">
+
+
+            <RelativeLayout
+                android:id="@+id/deadline_date_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/job_deadline_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerVertical="true"
+                    android:text="Deadline : "
+                    android:textColor="@android:color/holo_red_light" />
+
+                <TextView
+                    android:id="@+id/job_deadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/black"
+                    android:layout_toEndOf="@+id/job_deadline_icon"
+                    android:layout_toRightOf="@+id/job_deadline_icon"
+                    android:text="2017-09-14"
+                    android:textSize="12sp" />
+            </RelativeLayout><!-- Job Deadline Date Container -->
+        </RelativeLayout> <!-- Job Crucial Information -->
+    </RelativeLayout><!-- Main Row -->
+
+</android.support.v7.widget.CardView>

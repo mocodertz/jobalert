@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Job Alert</string>
+    <string name="str_all_selected">All categories</string>
+
+    <string-array name="job_titles">
+        <item>All categories</item>
+        <item>Design</item>
+        <item>iOS development</item>
+        <item>Android development</item>
+        <item>Web development</item>
+        <item>Business analysis</item>
+        <item>Research</item>
+        <item>Sales</item>
+        <item>Quality assurance</item>
+        <item>Customer support</item>
+        <item>Other</item>
+    </string-array>
+    <!-- Bottom Navigation Menu Item String -->
+    <string name="job_feed">Job Feed</string>
+    <string name="job_profile">Profile</string>
+    <string name="job_help">Help</string>
+    <string name="job_setting">Setting</string>
+    <string name="logo_image">Logo Image</string>
+    <string name="company_name">Jengasoft Company Limited</string>
+    <string name="company_slogan">We Build , Better Software For You</string>
+    <string name="salary_scale">$65K – $95K</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</string>
+
+    <!-- Constant String for Help -->
+    <string name="application_letter_description">A job application letter (also known as a cover letter) is a letter you send with your resume to provide information on your skills and experience. This letter is your chance to “sell” yourself to an employer, explaining why you are an ideal candidate for a position.</string>
+
+    <!-- For PDF Document Downloading Dialog Messages and Tittle -->
+    <string name="pdf_show_online_dialog_title">Show PDF</string>
+    <string name="pdf_show_online_dialog_question">You are trying to open a PDF file, but you don\'t have a PDF reader installed. Do you want to read the PDF file online with Google Drive (Requires Google account)?</string>
+    <string name="pdf_show_online_dialog_button_yes">Yes, read online</string>
+    <string name="pdf_show_online_dialog_button_no">No</string>
+    <string name="pdf_show_local_progress_title">Please wait</string>
+    <string name="pdf_show_local_progress_content">Downloading PDF&#8230;</string>
+    <string name="title_activity_on_boardingctivity">OnBoardingctivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Add a long description here about your app\'s important feature. Continuous review of setup of operating system to ensure efficiency in production and accuracy of various analytical reports for management use: %1$d</string>
+    <string name="job_feed_banner_ad_unit_id">ca-app-pub-1296435851943567/6333827619</string>
+    <string name="job_feed_native_ad_unit_id">ca-app-pub-1296435851943567/7762814577</string>
+</resources>

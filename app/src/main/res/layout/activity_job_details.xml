@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.jengasoft.jobalert.ui.activity.JobDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/job_details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/details_company_logo_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/details_company_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="16dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/details_crucial_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_company_logo_container">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/details_job_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Full Stack Software Engineer"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/details_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/details_job_title"
+                        android:layout_margin="2dp"
+                        android:text="JENGASOFT COMPANY LIMITED"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/details_experience_vacancies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/details_company_name"
+                        android:layout_margin="2dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/details_work_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/ic_work_black_24dp"
+                            android:tint="#827f93" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/details_work_experience"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/details_work_logo"
+                            android:text="3 - 8 Years" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/details_vacancies_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_toRightOf="@+id/details_work_experience"
+                            android:src="@drawable/ic_people_black_24dp"
+                            android:tint="#827f93" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/details_vacancies_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/details_vacancies_logo"
+                            android:text="20 Vacancies" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/details_job_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/details_experience_vacancies"
+                        android:layout_margin="2dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/details_location_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/ic_location_city_black_24dp"
+                            android:tint="#827f93" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/details_location_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/details_location_logo"
+                            android:text="Ilala, Mirambo Street, Dar es Salaam Tanzania" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/details_job_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/details_job_location"
+                        android:layout_margin="2dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/details_payment_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/ic_payment_black_24dp"
+                            android:tint="#827f93" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/details_payment_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/details_payment_logo"
+                            android:text="$1500 - $2000 per Month" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/details_job_desc_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_crucial_info_container"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/details_job_description_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Job Description"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/details_job_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_job_description_header"
+                    android:text="@string/lorem_ipsum" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/details_job_responsibilities_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_job_desc_container"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/details_job_resp_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Duties and Responsibilities"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/job_details_duties_resp_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_job_resp_title" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/details_job_skill_experience_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_job_responsibilities_container"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/details_job_skills_experiences_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skills and Experiences"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/details_job_skills_experience_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_job_skills_experiences_title" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/details_job_edu_req_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_job_skill_experience_container"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/details_job_edu_req_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum Academic Qualification "
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/details_job_edu_req_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_job_edu_req_title" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
